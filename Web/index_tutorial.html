@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Web</title>
+</head>
+<body>
+    <h1>Titulo de mi web</h1>
+    <h2>Bienvenidos a mi web</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </br> Quis voluptas ratione minus similique qui quibusdam, error
+        possimus nobis quod accusamus quas veniam porro, quidem 
+        debitis non dolorem ut odit maiores.
+    </p>
+    <hr/>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Officia beatae, dolor, necessitatibus nulla temporibus 
+        minus molestiae nostrum ad eaque praesentium, consectetur 
+        facilis atque! Illo vel deserunt corporis officiis, eaque sed!
+    </p>
+    <hr/>
+    <h3>Tercer encabezado</h3>
+    <p>
+        <Strong>Lorem ipsum,</Strong> dolor sit amet consectetur adipisicing elit. 
+        <blockquote>
+            Officia beatae, <em>dolor,</em> necessitatibus nulla temporibus 
+            <span id="resaltado" class="rojo amarillo">minus molestiae</span> nostrum ad eaque praesentium, consectetur 
+            facilis atque! Illo vel deserunt corporis officiis, eaque sed!
+        </blockquote>
+    </p>
+
+    <hr/>
+        <h2>Imagenes en HTML</h2>
+        <img src="imagenes/laptop.png" alt="Imagen de una laptop" title="Foto de laptop" width="255px">
+    <hr/>
+
+    <h3>Formulario</h3>
+    <form action="" method="post">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" name="nombre">
+        </p>
+        <p>
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Agregue una descripción..."></textarea>
+        </p>    
+        <input type="radio" name="genero" id="genero" value="hombre"> Hombre <br/>
+        <input type="radio" name="genero" id="genero" value="mujer"> Mujer <br/>
+        <input type="radio" name="genero" id="genero" value="otro"> Otro <br/>
+
+        <select name="select_genero" id="select_genero">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="otro">Otro</option>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Listado de Frutas</h3>
+    <ol>
+        <li>Manzana
+            <ul>
+                <li>Roja</li>
+                <li>Verde</li>
+            </ul>
+        </li>
+        <li>Naranja</li>
+        <li>Pera</li>
+        <li>Sandia</li>
+    </ol>
+
+    <h3>Tablas</h3>
+    <table border="1">
+        <tr> <!--Fila-->
+            <th>Nombre</th> <!--Columna-->
+            <th>Apellidos</th>
+            <th>País</th>
+        </tr>
+        <tr> <!--Fila-->
+            <td>Edwars</td> <!--Columna-->
+            <td>Bosarreyes</td>
+            <td>Guatemala</td>
+        </tr>
+        <tr> <!--Fila-->
+            <td>Sandra</td> <!--Columna-->
+            <td colspan="2">Jovel</td>
+            <td>México</td>
+        </tr>
+    </table>
+</body>
+</html>
