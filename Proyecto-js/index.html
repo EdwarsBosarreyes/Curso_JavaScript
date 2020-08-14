@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto con JavaScript</title>
 
   <!-- Estilos CSS -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <!-- Moment JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.js"></script>
+
+  <!-- Mis Scripts -->
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
+
 <body>
+  <div id="selector-theme">
+    <div id="to-green"></div>
+    <div id="to-red"></div>
+    <div id="to-blue"></div>
+  </div>
+
   <section id="global">
     <header>
       <div id="logo">
@@ -29,41 +52,57 @@
     </header>
 
     <div id="slider">
-
+      <div class="galeria">
+        <div><img src="img/hojas.jpg" title="Hojas"></div>
+        <div><img src="img/rojo.jpg" title="Rojo"></div>
+        <div><img src="img/cielo.jpg" title="Cielo"></div>
+      </div>
     </div>
 
     <section id="content">
       <div id="posts">
-        <article class="post">
-          <h2>Titulo del Articulo</h2>
-          <span class="date">Fecha de Publicación</span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati necessitatibus unde mollitia voluptates atque ullam odit perspiciatis animi a repellat, ex, et libero id officia, eos sequi saepe illum quas.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit debitis voluptatum perferendis ducimus sunt. Alias, ducimus eligendi. Voluptatem nam quisquam non odit beatae aspernatur temporibus ex mollitia neque id! Magnam.
-          </p>
-          <a href="#" class="button-more">Leer mas</a>
-        </article>
-        <article class="post">
-          <h2>Titulo del Articulo</h2>
-          <span class="date">Fecha de Publicación</span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque
-            optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati necessitatibus unde mollitia voluptates atque
-            ullam odit perspiciatis animi a repellat, ex, et libero id officia, eos sequi saepe illum quas.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit debitis voluptatum perferendis ducimus sunt. Alias,
-            ducimus eligendi. Voluptatem nam quisquam non odit beatae aspernatur temporibus ex mollitia neque id! Magnam.
-          </p>
-          <a href="#" class="button-more">Leer mas</a>
-        </article>
+        <!--Cargar los Post desde un JSON-->
       </div>
-      <sidebar id="sidebar"></sidebar>
+      <aside id="aside">
+        <div id="about">
+          <h4><span> Quién Soy?</span></h4>
+          <img src="./img/caracol.jpg" alt="caracol">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellendus illum quisquam dolore
+            autem, ipsam maiores quos porro voluptates delectus consectetur ducimus facilis architecto minus similique,
+            ex cumque ea officia?</p>
+        </div>
+
+        <div id="login">
+          <h4><span>Identificate</span></h4>
+          <form>
+            <label for="name">
+              Nombre
+            </label>
+            <input type="text" name="name" id="form_name">
+            <br>
+            <label for="email">
+              Email
+            </label>
+            <input type="email" name="email">
+            <br>
+            <label for="password">
+              Password
+            </label>
+            <input type="password" name="password">
+            <br>
+            <input type="submit" value="Entrar">
+          </form>
+        </div>
+
+      </aside>
       <div class="clearfix"></div>
     </section>
   </section>
   <footer>
     Master de JavaScript de Victor Robles &copy
+
+    <a href="#" class="subir">Ir arriba</a>
   </footer>
 </body>
+
 </html>
