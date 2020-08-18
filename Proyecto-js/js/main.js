@@ -1,40 +1,42 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
   //Slider
-  $('.galeria').bxSlider({
-    mode: 'fade',
-    captions: true,
-    slideWidth: 1200
-  });
+  if (window.location.href.indexOf('index') > -1) {
+    $('.galeria').bxSlider({
+      mode: 'fade',
+      captions: true,
+      slideWidth: 1200
+    });
+  }
 
   //Posts
-  var posts = [
-    {
-      title: 'Prueba de Titulo 1',
-      date: 'Publicado el dia ' + moment().date() + ' de ' + moment().format("MMMM") + ' del ' + moment().format("YYYY"),
-      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique.'   
-    },
-    {
-      title: 'Prueba de Titulo 2',
-      date: 'Publicado el dia ' + moment().date() + ' de ' + moment().format("MMMM") + ' del ' + moment().format("YYYY"),
-      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique.'
-    },
-    {
-      title: 'Prueba de Titulo 3',
-      date: 'Publicado el dia ' + moment().date() + ' de ' + moment().format("MMMM") + ' del ' + moment().format("YYYY"),
-      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique.'
+  if (window.location.href.indexOf('index') > -1) {
+    var posts = [
+      {
+        title: 'Prueba de Titulo 1',
+        date: 'Publicado el dia ' + moment().date() + ' de ' + moment().format("MMMM") + ' del ' + moment().format("YYYY"),
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique.'
+      },
+      {
+        title: 'Prueba de Titulo 2',
+        date: 'Publicado el dia ' + moment().date() + ' de ' + moment().format("MMMM") + ' del ' + moment().format("YYYY"),
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique.'
+      },
+      {
+        title: 'Prueba de Titulo 3',
+        date: 'Publicado el dia ' + moment().date() + ' de ' + moment().format("MMMM") + ' del ' + moment().format("YYYY"),
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique.'
 
-    },
-    {
-      title: 'Prueba de Titulo 4',
-      date: 'Publicado el dia ' + moment().date() + ' de ' + moment().format("MMMM") + ' del ' + moment().format("YYYY"),
-      content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique.'
+      },
+      {
+        title: 'Prueba de Titulo 4',
+        date: 'Publicado el dia ' + moment().date() + ' de ' + moment().format("MMMM") + ' del ' + moment().format("YYYY"),
+        content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit ut corrupti recusandae quibusdam possimus itaque optio quas quod ab libero provident, vero officia, reiciendis eligendi eius eaque eum similique.'
 
-    },
-  ];
-
-  posts.forEach((item, index) => {
-    var post = `
+      },
+    ];
+    posts.forEach((item, index) => {
+      var post = `
       <article class="post">
           <h2>${item.title}</h2>
           <span class="date">${item.date}</span>
@@ -45,12 +47,13 @@ $(document).ready(function(){
         </article>
     `;
 
-    $("#posts").append(post);
-  });
+      $("#posts").append(post);
+    });
+  }
 
   //Selector de Tema
   var theme = $("#theme");
-  $("#to-green").click(function(){
+  $("#to-green").click(function () {
     theme.attr("href", "css/green.css");
   });
 
@@ -63,7 +66,7 @@ $(document).ready(function(){
   });
 
   //Scroll arriba de la web
-  $('.subir').click(function(e){
+  $('.subir').click(function (e) {
     e.preventDefault();
     $('html, body').animate({
       scrollTop: 0
@@ -74,21 +77,49 @@ $(document).ready(function(){
 
   // Login Falso
 
-  $("#login form").submit(function() {
+  $("#login form").submit(function () {
     var form_name = $("#form_name").val();
     localStorage.setItem("form_name", form_name);
   });
 
   var name = localStorage.getItem("form_name");
-  if(name != null && name != "undefined"){
+  if (name != null && name != "undefined") {
     var about_parrafo = $("#about p")
-    about_parrafo.html("<br><strong>Bienvenido, " + name+"</strong>");
+    about_parrafo.html("<br><strong>Bienvenido, " + name + "</strong>");
     about_parrafo.append("<a href='#' id='logout'>Cerrar Sesión</a>");
 
     $("#login").hide();
-    $("#logout").click(function(){
+    $("#logout").click(function () {
       localStorage.clear();
       location.reload();
     });
   }
+
+  //Acordeon
+  if (window.location.href.indexOf('about') > -1) {
+    $('#acordeon').accordion();
+  }
+
+  //Reloj
+  if (window.location.href.indexOf('reloj') > -1) {
+   setInterval(function() {
+     var reloj = moment().format("hh:mm:ss");
+     $('#reloj').html(reloj);
+   }, 1000);
+  }
+
+  //Validación 
+  if (window.location.href.indexOf('contact') > -1) {
+
+    $("form input[name='date']").datepicker({
+      dateFormat: 'dd-mm-yy'
+    });
+
+    $.validate({
+      lang: 'es',
+      errorMessagePosition: 'top',
+      scrollToTopOnError: true
+    });
+  }
+
 });

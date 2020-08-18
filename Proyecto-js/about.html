@@ -12,14 +12,10 @@
 
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-  <!-- Slider -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-
-  <!-- Moment JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.js"></script>
+  <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css">
+  <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 
   <!-- Mis Scripts -->
   <script type="text/javascript" src="js/main.js"></script>
@@ -51,17 +47,32 @@
       </nav>
     </header>
 
-    <div id="slider">
-      <div class="galeria">
-        <div><img src="img/hojas.jpg" title="Hojas"></div>
-        <div><img src="img/rojo.jpg" title="Rojo"></div>
-        <div><img src="img/cielo.jpg" title="Cielo"></div>
-      </div>
-    </div>
-
     <section id="content">
-      <div id="posts">
-        <!--Cargar los Post desde un JSON-->
+      <div id="box">
+        <!--Cargar Acordeon-->
+        <h2>Sobre Mi</h2>
+        <div id="acordeon">
+          <h3>Quienes somos?</h3>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad mollitia, itaque aperiam quaerat doloremque doloribus eveniet vero sapiente veritatis dicta alias. Labore vitae et consequuntur asperiores aperiam esse rem!
+            </p>
+          </div>
+          <h3>Nuestros Servicios</h3>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad mollitia, itaque aperiam quaerat doloremque
+              doloribus eveniet vero sapiente veritatis dicta alias. Labore vitae et consequuntur asperiores aperiam esse rem!
+            </p>
+          </div>
+          <h3>Nuestros Clientes</h3>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad mollitia, itaque aperiam quaerat doloremque
+              doloribus eveniet vero sapiente veritatis dicta alias. Labore vitae et consequuntur asperiores aperiam esse rem!
+            </p>
+          </div>
+        </div>
       </div>
       <aside id="aside">
         <div id="about">
@@ -79,14 +90,17 @@
               Nombre
             </label>
             <input type="text" name="name" id="form_name">
+            <br>
             <label for="email">
               Email
             </label>
             <input type="email" name="email">
+            <br>
             <label for="password">
               Password
             </label>
             <input type="password" name="password">
+            <br>
             <input type="submit" value="Entrar">
           </form>
         </div>
